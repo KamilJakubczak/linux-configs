@@ -1,0 +1,36 @@
+Syntax of the Vim language
+
+Verb + Noun
+
+Verbs:
+	d => delete
+	w => word
+	c => change (delete and insert mode)
+	v => visually select
+	y => yank (copy)
+	j => go line down
+Nouns:
+	w => word(fowarded by a word)
+	b => back (back by a word)
+	iw => inner word (works from anywhere in a word)
+	it => inner tag (the contents of an HTML tag)
+	i" => "inner quotes"
+	ip => inner paragraph
+	as => a sentence
+Other:
+	.  repeat the last change
+	u undo the last change
+	f,F find the next character
+	t,T find the next character
+	/ => search (?)
+
+Examples:
+	dn deletes the word
+	>j indent current line and the following line
+	gg go to the beggining of the file
+	G go to the end of the file
+te assah this ins "ASCD"
+
+te
+
+
