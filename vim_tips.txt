@@ -29,8 +29,10 @@ Examples:
 	>j indent current line and the following line
 	gg go to the beggining of the file
 	G go to the end of the file
-te assah this ins "ASCD"
 
-te
-
-
+PLUGINS:
+	Surround:
+		cs'" => change ' to "
+		ds" => remove "
+		ysiw{ => add {
+		yss) => add to whole line
