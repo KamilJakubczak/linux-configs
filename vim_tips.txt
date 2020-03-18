@@ -4,11 +4,24 @@ Verb + Noun
 
 Verbs:
 	d => delete
+    D => delete until the oend od the line 
 	w => word
 	c => change (delete and insert mode)
 	v => visually select
 	y => yank (copy)
 	j => go line down
+    x => delets the selected lettera
+    0 => firs in line
+    A => end of line
+    x => delete a character
+    23G => go to 23rd line
+    e => end of next word
+    r => replace selected character
+    s => delete character + insert mode
+    S => delete line + isnet mode
+    o => add line below + insert mode 
+    O => add line above + inset mode 
+    $ => find brackets in current line 
 Nouns:
 	w => word(fowarded by a word)
 	b => back (back by a word)
@@ -17,13 +30,20 @@ Nouns:
 	i" => "inner quotes"
 	ip => inner paragraph
 	as => a sentence
+    c$ => change/delete entire line and start insert mode
+    C => change/delete entire line and start insert mode
+    ctr+o => go to previous posioton
+    ctr+i => got to next position
 Other:
 	.  repeat the last change
 	u undo the last change
+    ctr + r => redo
 	f,F find the next character
 	t,T find the next character
 	/ => search (?)
-
+    %s/oldstring/newstring/g - replace string in entire doc 
+    %s/oldstring/newstring/gc - replace string in entire doc with prompt
+    3,9s/oldstring/newstring - replace string in lines froom 3 to 9
 Examples:
 	dn deletes the word
 	>j indent current line and the following line
