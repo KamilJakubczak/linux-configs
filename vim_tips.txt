@@ -22,6 +22,7 @@ Verbs:
     o => add line below + insert mode 
     O => add line above + inset mode 
     $ => find brackets in current line 
+    + => go to next line firt char
 Nouns:
 	w => word(fowarded by a word)
 	b => back (back by a word)
@@ -44,6 +45,8 @@ Other:
     %s/oldstring/newstring/g - replace string in entire doc 
     %s/oldstring/newstring/gc - replace string in entire doc with prompt
     3,9s/oldstring/newstring - replace string in lines froom 3 to 9
+    :wq - close window
+    ctr+shift+W - change window
 Examples:
 	dn deletes the word
 	>j indent current line and the following line
