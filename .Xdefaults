@@ -1,0 +1,6 @@
+URxvt.scrollBar:        false
+URxvt.font:             xft:monospace:size=10
+URxvt.cursorColor:      magenta
+URxvt.shading:          40
+URxvt.transparent:      true
+URxvt.shadinf:          80
