@@ -22,8 +22,10 @@ Plugin 'ervandew/supertab'
 Plugin 'valloric/youcompleteme'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'nvie/vim-flake8'
-Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'nathanaelkane/vim-indent-guides' replaced with indentLine 
+" it gives the color blocks for indent levels
 Plugin 'tpope/vim-fugitive'
+Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,8 +44,8 @@ let python_highlight_all=1
 syntax on
 colorscheme gruvbox
 
-"set bg=dark
-"hi Normal guibg=NONE ctermbg=NONE
+set bg=dark
+hi Normal guibg=NONE ctermbg=NONE
 "define BadWhitespace before using in a match
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.html,*.css,*.php match BadWhitespace /\s\+$/
@@ -134,5 +136,13 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 """""""""""""""""""""""
 "" Vim indent plugin ""
-""""""""""""""""""""""
-let g:indent_guides_enable_on_vim_startup = 1
+"""""""""""""""""""""""
+" let g:indent_guides_enable_on_vim_startup = 1
+
+"""""""""""""""""
+"" Indent line ""
+"""""""""""""""""
+let g:indentLine_enabled = 1
+let g:indentLine_setColors = 0
+let g:indentLine_char = 'c'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
